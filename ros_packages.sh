@@ -22,18 +22,21 @@ do
             echo "Creating catkin_ws workspace"
             mkdir -p ~/catkin_ws/src
             echo "[Set the ROS evironment]"
-            echo "alais cw='~/catin_ws'" >> ~/.bashrc
+            echo "alias cw='~/catin_ws'" >> ~/.bashrc
             echo "alias cs='cd ~/catkin_ws/src'" >> ~/.bashrc
             echo "alias cm='cw && catkin_make'" >> ~/.bashrc
             echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
             echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
             echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
+            cd ~
             src
             sleep 10s
-            cs
+            cd ~/catkin_ws/src
             catkin_init_workspace
             sleep 5s
-            cm
+            cd ~/catkin_ws
+            catkin_make
+            cd ~/scripts
             echo "Done!!!"
             ;;
         2)
