@@ -109,8 +109,10 @@ do
         10)
             echo "Installing ROS"
             ./installROS.sh
+            ;;
         11)
             ./ros_packages.sh
+            ;;
         *)
             echo wrong choice
             ;;
