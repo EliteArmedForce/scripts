@@ -39,7 +39,7 @@ do
             echo "Done!!!"
             ;;
         2)
-            chmod +x bashrc_addons.sh
+            sudo chmod 777 bashrc_addons.sh
             ./bashrc_addons
             ;;
         3)
@@ -91,6 +91,7 @@ do
             echo "Done!!!"
             ;;
         8)
+            sudo chmod 777 tensorflow_install.sh
             ./tensorflow_install.sh
             ;;
         9)
@@ -108,9 +109,11 @@ do
             ;;
         10)
             echo "Installing ROS"
+            sudo chmod 777 installROS.sh
             ./installROS.sh
             ;;
         11)
+            sudo chmod 777 ros_packages.sh
             ./ros_packages.sh
             ;;
         *)
