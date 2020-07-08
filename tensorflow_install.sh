@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "Tensorflow installing option:"
 echo "a) Tensorflow v1.15.2 pip build"
 echo "b) Tensorflow v2.1 with pip build"

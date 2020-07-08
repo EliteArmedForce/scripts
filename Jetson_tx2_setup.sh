@@ -15,9 +15,9 @@ do
     echo "7) Install OpenCV v3.4.8"
     echo "8) Install Tensorflow"
     echo "9) Installing YOLOv3"
-    echo "12) Installing ROS Melodic"
-    echo "13) Installing ROS Packages"
-    echo "11) Installing ZED SDK (check ros, zed-ros-wrapper)"
+    echo "10) Installing ROS Melodic"
+    echo "11) Installing ROS Packages"
+    echo "12) Installing ZED SDK (check ros, zed-ros-wrapper)"
     echo "99) Tester"
     echo "#=====================================================#"
     echo "Press <CTRL+C> to exit."
@@ -36,6 +36,7 @@ do
             echo "Rebooting in 5s"
             sleep 5
             sudo reboot
+            echo "Done!!!"
             ;;
         2)
             chmod +x bashrc_addons.sh
@@ -49,6 +50,8 @@ do
             ;;
         4)
             echo "Installing Visual Studio Code"
+            echo "Special thanks to Mr. Jim from JetsonHack for the script"
+            echo "Youtube: https://www.youtube.com/c/JetsonHacks & Github: https://github.com/jetsonhacks"
             git clone https://github.com/JetsonHacksNano/installVSCode.git
             cd installVSCode
             ./installVSCode.sh
@@ -103,7 +106,11 @@ do
             cd ..
             echo "Done!!!"
             ;;
-
+        10)
+            echo "Installing ROS"
+            ./installROS.sh
+        11)
+            ./ros_packages.sh
         *)
             echo wrong choice
             ;;
