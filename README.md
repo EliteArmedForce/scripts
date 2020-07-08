@@ -7,4 +7,4 @@ Special thanks to Mr. Jim from JetsonHack and Jk Jung\
 YouTube: https://www.youtube.com/c/JetsonHacks & Github: https://github.com/jetsonhacks \
 Website: https://jkjung-avt.github.io/ & Github: https://github.com/jkjung-avt
 
-**Please note this scripts were tested on Jetson TX2**
+**Please note this scripts were tested in Jetson TX2**
