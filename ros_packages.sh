@@ -22,16 +22,17 @@ do
             echo "Creating catkin_ws workspace"
             mkdir -p ~/catkin_ws/src
             echo "[Set the ROS evironment]"
-            sh -c "echo \"alias cw='cd ~/catkin_ws'\" >> ~/.bashrc"
-            sh -c "echo \"alias cs='cd ~/catkin_ws/src'\" >> ~/.bashrc"
-            sh -c "echo \"alias cm='cw && catkin_make'\" >> ~/.bashrc"
-            sh -c "echo \"source /opt/ros/melodic/setup.bash\" >> ~/.bashrc"
-            sh -c "echo \"source ~/catkin_ws/devel/setup.bash\" >> ~/.bashrc"
-            sh -c "echo \"export ROS_MASTER_URI=http://localhost:11311\" >> ~/.bashrc"
-            sh -c "echo \"export ROS_HOSTNAME=localhost\" >> ~/.bashrc"
-            source ~/.bashrc
+            echo "alais cw='~/catin_ws'" >> ~/.bashrc
+            echo "alias cs='cd ~/catkin_ws/src'" >> ~/.bashrc
+            echo "alias cm='cw && catkin_make'" >> ~/.bashrc
+            echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+            echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
+            echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
+            src
+            sleep 10s
             cs
             catkin_init_workspace
+            sleep 5s
             cm
             echo "Done!!!"
             ;;
