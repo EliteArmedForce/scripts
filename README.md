@@ -1,7 +1,7 @@
 # Scripts
 
-This script is for Jetson Developer Kits (Jetson TX1, TX2 and Xavier)\
-This script do the following:\
+This script is for Jetson Developer Kits (Jetson TX2 and Xavier)\
+This can script do the following:\
 Installs: NoMachine arm64, Visual Studio Code, Tensorflow and Yolov3\
 Setting up Jetson for SSD, ZRAM Swap resize and bashrc addons\
 Special thanks to Mr. Jim from JetsonHack and Jk Jung\
